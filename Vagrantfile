@@ -9,11 +9,12 @@ Vagrant.configure("2") do |config|
   config.vbguest.auto_update = false
   # do NOT download the iso file from a webserver
   config.vbguest.no_remote = true
+  # enable x window system
+  config.ssh.forward_x11 = true
 
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI when booting the machine
     vb.gui = false 
- 
     # Customize the amount of memory on the VM:
     vb.memory = "2048"
   end
