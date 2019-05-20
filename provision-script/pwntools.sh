@@ -3,7 +3,7 @@
 # Pwn tools
 mkdir -p ~/tools/pwn
 dir=~/tools/pwn
-sudo apt-get install -y gdb libssl-dev build-essential gcc-multilib binutils lib32z1
+sudo -E apt-get install -y gdb libssl-dev build-essential gcc-multilib binutils lib32z1
 
 ## peda
 if [ ! -e $dir/peda ]; then

@@ -2,9 +2,9 @@
 
 # init
 export DEBIAN_FRONTEND=noninteractive
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install -y git python-pip
+sudo -E apt-get update
+sudo -E apt-get upgrade -y
+sudo -E apt-get install -y git python-pip
 
 # Pwn tools
 bash /tmp/provision-script/pwntools.sh
