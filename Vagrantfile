@@ -2,7 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu16-04"
+  config.vm.box = "ubuntu/bionic64"
+  # shared folder
   config.vm.synced_folder "~/ctfs", "/home/vagrant/ctfs"
   # additions version when booting this machine
   config.vbguest.auto_update = false
@@ -16,7 +17,7 @@ Vagrant.configure("2") do |config|
     # Customize the amount of memory on the VM:
     vb.memory = "2048"
   end
-
+  # Setting up script
   config.vm.provision "file", source: "./provision-script", destination: "/tmp/provision-script"
   config.vm.provision "shell", :path => "./provision-script/init.sh", :privileged => false
 end
