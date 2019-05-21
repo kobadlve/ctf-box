@@ -3,8 +3,10 @@
 Based on Ubuntu/bionic(18.04)
 
 ## Setup
+
 ```
 $ vagrant up
+$ vagrant ssh
 ```
 
 ## Tools
