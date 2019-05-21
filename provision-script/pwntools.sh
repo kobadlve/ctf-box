@@ -21,3 +21,9 @@ if [ ! -e $dir/rp-x86++ ]; then
   wget https://github.com/downloads/0vercl0k/rp/rp-lin-x86 -P ~/tools/pwn/rp-x86++
   wget https://github.com/downloads/0vercl0k/rp/rp-lin-x64 -P ~/tools/pwn/rp-x64++
 fi
+## radare2
+if [ ! -e $dir/radare2 ]; then
+  git clone https://github.com/radare/radare2.git ~/tools/pwn/radare2
+  cd ~/tools/pwn/radare2
+  sys/install.sh
+fi
