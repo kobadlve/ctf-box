@@ -27,7 +27,7 @@ $ vagrant ssh
 
 | name | info | link |
 | -------- | -------- | -------- |
-| foremost | File caver | http://foremost.sourceforge.net/ |
+| foremost | File carver | http://foremost.sourceforge.net/ |
 | binwalk | Firmware analysis | https://github.com/ReFirmLabs/binwalk |
 | exiftool | Meta information analysis | https://www.sno.phy.queensu.ca/~phil/exiftool/ |
 | volatility | Memory forensics | https://github.com/volatilityfoundation/volatility |
