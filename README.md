@@ -1,9 +1,9 @@
 # CTF-BOX
 
+Based on Ubuntu/bionic(18.04)
+
 ## Setup
 ```
-# Download image if you don't have it
-$ vagrant box add ubuntu16-04 https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-vagrant.box
 $ vagrant up
 ```
 
@@ -17,11 +17,10 @@ $ vagrant up
 * rp++
 
 
-### Crypt
+### Crypto
 
 ### Forensics
 
 * binwalk
 * foremost
 * exiftool
-* forensics-all(https://packages.ubuntu.com/xenial/forensics-all)
