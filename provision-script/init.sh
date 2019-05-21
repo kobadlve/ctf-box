@@ -4,10 +4,19 @@
 export DEBIAN_FRONTEND=noninteractive
 sudo -E apt-get update
 sudo -E apt-get upgrade -y
-sudo -E apt-get install -y git python-pip
+sudo -E apt-get install -y git python-pip python3-pip
+
+# virtualenv
+pip install virtualenv virtualenvwrapper
+echo 'source ~/.local/bin/virtualwrapper.sh' >> ~/.zshrc
+echo 'export WORKON_HOME=~/.virtualenvs' >> ~/.zshrc
 
 # Pwn tools
 bash /tmp/provision-script/pwntools.sh
 
 # Forensics tools
 bash /tmp/provision-script/forensicstools.sh
+
+# Crypto tools
+bash /tmp/provision-script/cryptotools.sh
+

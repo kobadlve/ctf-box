@@ -15,3 +15,8 @@ cd build
 make
 sudo make install
 
+# RsaCtfTool
+git clone https://github.com/Ganapati/RsaCtfTool.git ~/tools/crypto/RsaCtfTool
+
+# hash-identifier
+wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hash-identifier/Hash_ID_v1.1.py ~/tools/crypto/hash-identifier.py

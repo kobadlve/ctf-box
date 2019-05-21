@@ -22,6 +22,7 @@ $ vagrant ssh
 | rop++ | Find ROP Gadget | https://github.com/0vercl0k/rp |
 | checksec | Check the properties of executables | https://github.com/slimm609/checksec.sh |
 | redare2 | Reverse engineering framework | https://github.com/radare/radare2 |
+| angr | Binary analysis tool | https://github.com/angr/angr-dev |
 
 ### Forensics
 
@@ -42,10 +43,14 @@ $ vagrant ssh
 | socat | Advanced proxy tool ||
 | wireshark | Network protocol analyzer | https://www.wireshark.org/ |
 | nmap | Network mapper/scanner | https://nmap.org/ |
+| zmap | Internet Scanner | https://zmap.io/ |
 
 ### Crypto
+
 | name | info | link |
 | -------- | -------- | -------- |
 | sagemath | Mathematics software system | https://www.sagemath.org/ |
 | z3 | Theorem prover | https://github.com/Z3Prover/z3 |
+| RsaCtfTool | RSA Cihper analysis | https://github.com/Ganapati/RsaCtfTool |
+| hash-identifier | Detect hash | https://code.google.com/archive/p/hash-identifier/source |
 
