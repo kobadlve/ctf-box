@@ -3,7 +3,7 @@
 # Forensics tools
 mkdir -p ~/tools/for
 dir=~/tools/for
-sudo -E -# apt-get install -y python-lzma python-crypto libqt4-opengl python-opengl python-qt4 python-qt4-gl python-numpy python-scipy
+sudo -E apt-get install -y python-lzma python-crypto libqt4-opengl python-opengl python-qt4 python-qt4-gl python-numpy python-scipy
 
 # binwalk, foremost, exiftool, socat, nmap, zmap
 sudo -E apt-get install -y binwalk foremost exiftool socat nmap zmap
