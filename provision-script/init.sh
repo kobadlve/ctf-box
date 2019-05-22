@@ -8,8 +8,9 @@ sudo -E apt-get install -y git python-pip python3-pip
 
 # virtualenv
 pip install virtualenv virtualenvwrapper
-echo 'source ~/.local/bin/virtualwrapper.sh' >> ~/.zshrc
-echo 'export WORKON_HOME=~/.virtualenvs' >> ~/.zshrc
+echo 'source ~/.local/bin/virtualenvwrapper.sh' >> ~/.bashrc
+echo 'export WORKON_HOME=~/.virtualenvs' >> ~/.bashrc
+source ~/.bashrc
 
 # Pwn tools
 bash /tmp/provision-script/pwntools.sh
