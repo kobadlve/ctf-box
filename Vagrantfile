@@ -11,12 +11,21 @@ Vagrant.configure("2") do |config|
   config.vbguest.no_remote = true
   # enable x window system
   config.ssh.forward_x11 = true
+  config.disksize.size = '60GB'
+
 
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI when booting the machine
-    vb.gui = false 
+    vb.gui = true 
     # Customize the amount of memory on the VM:
     vb.memory = "2048"
+    vb.customize [
+      "modifyvm", :id,
+      "--vram", "256",
+      "--clipboard", "bidirectional",
+      "--draganddrop", "bidirectional",
+      "--ioapic", "on"
+    ]
   end
   # Setting up script
   config.vm.provision "file", source: "./provision-script", destination: "/tmp/provision-script"

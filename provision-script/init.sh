@@ -4,7 +4,7 @@
 export DEBIAN_FRONTEND=noninteractive
 sudo -E apt-get update
 sudo -E apt-get upgrade -y
-sudo -E apt-get install -y git python python3 python-dev python3-dev python3-setuptools
+sudo -E apt-get install -y git python python3 python-dev python3-dev python3-setuptools ubuntu-desktop
 
 # pip
 curl -kL https://bootstrap.pypa.io/get-pip.py | sudo python3
